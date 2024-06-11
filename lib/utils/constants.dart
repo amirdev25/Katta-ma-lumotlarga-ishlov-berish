@@ -9,5 +9,6 @@ class Constants{
 
   ///Pdf_files
   static const String test_file = "assets/files/test.pdf";
+  static const String tests_file = "assets/files/testlar.pdf";
   static const String literature_file = "assets/files/literature.pdf";
 }

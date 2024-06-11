@@ -12,9 +12,7 @@ class ListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<ThemeModel> dataList = category == Constants.lectures
-        ? LocalDatabase.getLectures()
-        : LocalDatabase.getPractices();
+    List<ThemeModel> dataList = getDataList(category);
 
     return Scaffold(
       appBar: AppBar(
@@ -42,5 +40,18 @@ class ListPage extends StatelessWidget {
         },
       ),
     );
+  }
+
+  List<ThemeModel> getDataList(String category) {
+    switch (category) {
+      case Constants.lectures:
+        return LocalDatabase.getLectures();
+      case Constants.practices:
+        return LocalDatabase.getPractices();
+      case Constants.resources:
+        return LocalDatabase.getResources();
+      default:
+        return []; // Bo'sh ro'yxat qaytariladi, agar kategoriya aniqlanmagan bo'lsa
+    }
   }
 }

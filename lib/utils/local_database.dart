@@ -32,14 +32,23 @@ class LocalDatabase {
   static List<ThemeModel> getPractices() {
     List<ThemeModel> practiceList = [
       ThemeModel("1-Amaliy mashg'ulot: Onlayn ma’lumotlar manbaidan ma’lumotlarni tanlash bilan OLAP kubini yaratish", "assets/files/p1.pdf"),
-      ThemeModel("1-Amaliy mashg'ulot: Katta hajmli ma’lumotlar omborini yaratishni rejalashtirish", "assets/files/p2.pdf"),
-      ThemeModel("1-Amaliy mashg'ulot: Katta hajmli ma’lumotlar tasvirlash modellari", "assets/files/p3.pdf"),
-      ThemeModel("1-Amaliy mashg'ulot: Tanlangan predmet soha uchun katta hajmli ma’lumotlar bazasini loyihalash", "assets/files/p4.pdf"),
-      ThemeModel("1-Amaliy mashg'ulot: Katta hajmli ma’lumotlar tizimlarining asosiy prinsiplari", "assets/files/p5.pdf"),
-      ThemeModel("1-Amaliy mashg'ulot: My SQL Server 2008 yordamida ma’lumotlar bazasini ishlab chiqish va ishlatish", "assets/files/p6.pdf"),
-      ThemeModel("1-Amaliy mashg'ulot: Funksional dasturlash va unda amaliy masalalarni hal qilish", "assets/files/p7.pdf"),
-      ThemeModel("1-Amaliy mashg'ulot: Katta hajmli ma’lumotlar xavfsizligini ta’minlash usullari", "assets/files/p8.pdf"),
+      ThemeModel("2-Amaliy mashg'ulot: Katta hajmli ma’lumotlar omborini yaratishni rejalashtirish", "assets/files/p2.pdf"),
+      ThemeModel("3-Amaliy mashg'ulot: Katta hajmli ma’lumotlar tasvirlash modellari", "assets/files/p3.pdf"),
+      ThemeModel("4-Amaliy mashg'ulot: Tanlangan predmet soha uchun katta hajmli ma’lumotlar bazasini loyihalash", "assets/files/p4.pdf"),
+      ThemeModel("5-Amaliy mashg'ulot: Katta hajmli ma’lumotlar tizimlarining asosiy prinsiplari", "assets/files/p5.pdf"),
+      ThemeModel("6-Amaliy mashg'ulot: My SQL Server 2008 yordamida ma’lumotlar bazasini ishlab chiqish va ishlatish", "assets/files/p6.pdf"),
+      ThemeModel("7-Amaliy mashg'ulot: Funksional dasturlash va unda amaliy masalalarni hal qilish", "assets/files/p7.pdf"),
+      ThemeModel("8-Amaliy mashg'ulot: Katta hajmli ma’lumotlar xavfsizligini ta’minlash usullari", "assets/files/p8.pdf"),
     ];
     return practiceList;
+  }
+  static List<ThemeModel> getResources() {
+    List<ThemeModel> rList = [
+      ThemeModel("1-Adabiyot: Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow", "assets/files/r1.pdf"),
+      ThemeModel("2-Adabiyot: Machine Learning For Absolute Beginners", "assets/files/r2.pdf"),
+      ThemeModel("3-Adabiyot: Учебное пособие по дисциплине «Приложения нейронных сетей» ", "assets/files/r3.pdf"),
+      ThemeModel("4-Adabiyot: Нейронные сети: основы теории", "assets/files/r4.pdf"),
+    ];
+    return rList;
   }
 }
